@@ -5,7 +5,7 @@
 	 * A front-end for steering a TNT airship in-game. 
 	 * The idea was all along to modify an airships plugin as a back-end to read a database and move accordingly but this never happened.
 	 *
-	 * Written by Crizzly
+	 * Written by Crizzly, Stenudd
 	 * Website: http://crizzly.fi (demo available)
 	 */
 
