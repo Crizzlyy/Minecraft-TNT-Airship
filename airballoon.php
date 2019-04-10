@@ -1,7 +1,7 @@
 <?php
 
 	/*
-	 * Minecraft TNT Airballoon
+	 * Minecraft TNT Airship
 	 * A front-end for steering a TNT airship in-game. 
 	 * The idea was all along to modify an airships plugin as a back-end to read a database and move accordingly but this never happened.
 	 *
@@ -279,7 +279,7 @@ function updateMapArea() {
 function moveup() {
 	if(tntBalloon.y > 0){
 	tntBalloon.speedY = -1;
-	$.post("airballoon.php", {'update_up':''}, function (data) {});
+	$.post("airship.php", {'update_up':''}, function (data) {});
 	}
 	else{
 		tntBalloon.speedY = 0;
@@ -289,21 +289,21 @@ function moveup() {
 function movedown() {
 	if(tntBalloon.y != 355){		
     tntBalloon.speedY = 1;	
-	$.post("airballoon.php", {'update_down':''}, function (data) {});
+	$.post("airship.php", {'update_down':''}, function (data) {});
 	}
 }
 
 function moveleft() {
 	if(tntBalloon.x > 0){
     tntBalloon.speedX = -1; 
-	$.post("airballoon.php", {'update_left':''}, function (data) {});
+	$.post("airship.php", {'update_left':''}, function (data) {});
 	}
 }
 
 function moveright() {
 	if(tntBalloon.x != 355){
     tntBalloon.speedX = 1;
-	$.post("airballoon.php", {'update_right':''}, function (data) {});
+	$.post("airship.php", {'update_right':''}, function (data) {});
 	}
 }
 
@@ -349,7 +349,7 @@ $(function() {
 });
 </script>
 <body onload="startMap()">
-<title>Minecraft TNT Airballoon</title>
+<title>Minecraft TNT Airship</title>
   <button id="dirbutton" name="update_up" class="up" onclick="moveup()"><img src="up.png" style="width:30px; height:30px;"></img></button>
   <button id="dirbutton2" name="update_left" class="left" onclick="moveleft()"><img src="left.png" style="width:30px; height:30px;"></img></button>
   <button id="dirbutton3" name="update_right" class="right" onclick="moveright()"><img src="right.png" style="width:30px; height:30px;"></img></button>
