@@ -1,5 +1,5 @@
 # Minecraft TNT Airship - Front-end
-#### There are room for many improvements in the code, it's on my to-do list to update several things, but feel free to improve things if you are going to use it :)
+#### The code needs both general improvements as security improvements, this is on my to-do list, but feel free to improve :)
 
 # [DEMO](https://crizzly.fi/demo-airship)
 
