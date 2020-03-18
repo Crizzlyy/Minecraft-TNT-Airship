@@ -1,20 +1,19 @@
 <?php
-
-	/*
-	 * Minecraft TNT Airship
-	 * A front-end for steering a TNT airship in-game. 
-	 * The idea was all along to modify an airships plugin as a back-end to read a database and move accordingly but this never happened.
-	 *
-	 * Written by Crizzly, Stenudd
-	 * Website: http://crizzly.fi (demo available)
-	 *
-	 * RIGHT, LEFT click updates the X axis with +1 respectively -1 
-	 * UP, DOWN click updates the Y axis with +1 respectively -1 
-     * airballoon.php calls update.php every second to update the balloon on the map in "realtime" 
-	 *
-	 * !!You need to insert the database inside update.php aswell for the "realtime" updating to work.!!
-	 *
-	 */
+/*
+	* Minecraft TNT Airship
+	* A front-end for steering a TNT airship in-game. 
+	* The idea was all along to modify an airships plugin as a back-end to read a database and move accordingly but this never happened.
+	*
+	* Written by Crizzly, Stenudd
+	* Website: http://crizzly.fi (demo available)
+	*
+	* RIGHT, LEFT click updates the X axis with +1 respectively -1 
+	* UP, DOWN click updates the Y axis with +1 respectively -1 
+	* airballoon.php calls update.php every second to update the balloon on the map in "realtime" 
+	*
+	* !!You need to insert the database inside update.php aswell for the "realtime" updating to work.!!
+	*
+	*/
 
 	$servername = "host";
 	$username = "user";
@@ -140,50 +139,64 @@
 
 <html>
 <head>
+	<meta description=
+	"////////////////////////////////////////////////////////
+	* TNT Airship Front-end for Minecraft Server///////
+	* Created by: Christoffer Törnroos///////////////////////
+	* License: MIT///////////////////////////////////////////
+	*////////////////////////////////////////////////////////"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
-	canvas {
-		border:2px solid black;
-        position:absolute;
-        top: 0;
-        left: 0;
-        z-index: 2000;     
+canvas {
+	border:2px solid black;
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;     
 }
-    .up
-    {
-        position:absolute;
-        top:0;
-        left: 170px;
-        z-index:3000;
-    }
-	.left
-    {
-        position:absolute;
-        top:170px;
-        left:2px;
-        z-index:3000;
-    }
-	.right
-    {
-        position:absolute;
-        top:170px;
-        left:342px;
-        z-index:3000;
-    }
-	.down
-    {
-        position:absolute;
-        top:349px;
-        left:170px;
-        z-index:3000;
-    }
-	h1{
-		font-size: 20px;
-		font-family: Arial;
-		margin-left: 5%;
-		margin-top: 2%;
-	}
+.up
+{
+	position:absolute;
+	top:0;
+	left:163px;
+	z-index:3000;
+}
+.left
+{
+	position:absolute;
+	top:169px;
+	left:-4px;
+	z-index:3000;
+}
+.right
+{
+	position:absolute;
+	top:169px;
+	left:327px;
+	z-index:3000;
+}
+.down
+{
+	position:absolute;
+	top:330px;
+	left:163px;
+	z-index:3000;
+}
+h1{
+	font-size: 20px;
+	font-family: Arial;
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+#dirbutton,
+#dirbutton2,
+#dirbutton3,
+#dirbutton4 {
+	background: none;
+	border: none;
+}
        
 </style>
 </head>
@@ -350,9 +363,9 @@ $(function() {
 </script>
 <body onload="startMap()">
 <title>Minecraft TNT Airship</title>
-  <button id="dirbutton" name="update_up" class="up" onclick="moveup()"><img src="up.png" style="width:30px; height:30px;"></img></button>
-  <button id="dirbutton2" name="update_left" class="left" onclick="moveleft()"><img src="left.png" style="width:30px; height:30px;"></img></button>
-  <button id="dirbutton3" name="update_right" class="right" onclick="moveright()"><img src="right.png" style="width:30px; height:30px;"></img></button>
-  <button id="dirbutton4" name="update_down" class="down" onclick="movedown()"><img src="down.png" style="width:30px; height:30px;"></img></button>
+  <button id="dirbutton" name="update_up" class="up" onclick="moveup()"><img src="up.png" style="width:50px; height:50px;"></img></button>
+  <button id="dirbutton2" name="update_left" class="left" onclick="moveleft()"><img src="left.png" style="width:50px; height:50px;"></img></button>
+  <button id="dirbutton3" name="update_right" class="right" onclick="moveright()"><img src="right.png" style="width:50px; height:50px;"></img></button>
+  <button id="dirbutton4" name="update_down" class="down" onclick="movedown()"><img src="down.png" style="width:50px; height:50px;"></img></button>
  </body>
 </html> 
