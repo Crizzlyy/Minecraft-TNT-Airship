@@ -1,4 +1,5 @@
 # Minecraft TNT Airship - Front-end
+#### The code needs both general improvements as security improvements, this is on my to-do list, but feel free to improve :)
 
 # [DEMO](https://crizzly.fi/demo-airship)
 
@@ -15,7 +16,7 @@ We created this because we had need for it during a minecraft tournament where t
 
 ### Known bugs 
 • Gives 1 error in console, nothing that really matters. <br>
-• For some kind of reason the balloon can SOMETIMES overlap the borders if there are many people updating the balloon position even though this is restricted in the code. 
+• For some kind of reason the airship can SOMETIMES overlap the borders if there are many people updating the ship position even though this is restricted in the code. This is probably due to the ship position is not checked with server-side.
 
 ### Screenshot
 ![This is how it looks like with our map. When we used it, we only ran it on another website with an <iframe>, worked great.](https://i.gyazo.com/65b3ac12350e291ff20d364783267047.png)
