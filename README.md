@@ -19,4 +19,4 @@ We created this because we had need for it during a minecraft tournament where t
 • For some kind of reason the airship can SOMETIMES overlap the borders if there are many people updating the ship position even though this is restricted in the code. This is probably due to the ship position is not checked with server-side.
 
 ### Screenshot
-![This is how it looks like with our map. When we used it, we only ran it on another website with an <iframe>, worked great.](https://i.gyazo.com/65b3ac12350e291ff20d364783267047.png)
+![This is how it looks like with our map. When we used it, we only ran it on another website with an <iframe>, worked great.](https://i.gyazo.com/1c70f3de3b6e2327bbecdefac3f93d62.png)
