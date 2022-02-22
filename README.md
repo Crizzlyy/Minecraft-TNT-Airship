@@ -1,6 +1,6 @@
 # Minecraft TNT Airship Webapp
 
-## Why this is created
+## Purpose
 We created this because we had need for it during a minecraft tournament where the players was supposed to build their own fortresses and defend them against the enemy after a period of building time. The idea was that the people watching the tournament was supposed to steer a TNT airship through the air, and at random times, this airship would drop TNT to destroy the things builded underneath. In our tournament the teams were divided in two, and the people cheering on their respective team wanted to destroy for the other team, so there's the point for the steering of the airship.
 
 ### How it works
